@@ -7,7 +7,7 @@ module.exports.index = (request, response) => {
 }
 
 module.exports.createAthlete = (request, response) => {
-    console.log('create method executed.')
+    console.log(request.body)
     const { name, position } = request.body;
     Athlete.create({
         name,
