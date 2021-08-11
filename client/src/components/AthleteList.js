@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import "../styles/athleteList.css"
 
 const AthleteList = props => {
     const { removeFromDom } = props;
@@ -16,7 +17,7 @@ const AthleteList = props => {
 
     return (
         <div>
-            <table className="table">
+            <table className="table table-striped">
                 <thead>
                     <tr>
                         <th>Athlete Name</th>
@@ -31,7 +32,10 @@ const AthleteList = props => {
                         <td>{athlete.position}</td>
                         <td><button onClick={(e) => {
                             handleDelete(athlete._id)
-                        }}>Delete</button></td>
+                        }}
+                        class="btn btn-danger"
+                        style={{width: "50%"}}
+                        >Delete</button></td>
                     </tr>
                 })}
                 </tbody>

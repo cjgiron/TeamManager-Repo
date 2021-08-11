@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.buttons {
+    text-align: right;
+}
+
+.btn {
+    margin-right: 5%;
+    width: 27%;
+    outline: solid black 1px;
+}
+
+.actions {
+    width: 80%;
+}

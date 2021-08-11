@@ -29,7 +29,7 @@ const AthleteForm = () => {
     //onChange to update firstName and lastName
     return (
         <div>
-            <Link to={'/athletes/list'}><strong>Manage Athletes</strong></Link>
+            <Link to={'/athletes/list'}><strong>Manage Athletes</strong></Link> | <Link to={'/status/game/1'}>Manage Athlete Status</Link>
             <div class="list_add">
                 <Link to={'/athletes/list'}>List</Link> | <span> </span>
                 <Link to={'/athletes/addAthlete'}><strong>Add Athlete</strong></Link>

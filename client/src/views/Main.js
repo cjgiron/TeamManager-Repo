@@ -25,7 +25,7 @@ const Main = () => {
 
     return (
         <div>
-            <Link to={'/athletes/list'}><strong>Manage Athletes</strong></Link>
+            <Link to={'/athletes/list'}><strong>Manage Athletes</strong></Link> | <Link to={'/status/game/1'}>Manage Athlete Status</Link>
             <div class="list_add">
                 <Link to={'/athletes/list'}><strong>List</strong></Link> | <span> </span>
                 <Link to={'/athletes/addAthlete'}>Add Athlete</Link>
