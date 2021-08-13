@@ -23,7 +23,7 @@ const AthleteStatus3 = props => {
         <div>
             <Link to={'/athletes/list'}>Manage Athletes</Link> | <Link to={'/status/game/1'}><strong>Manage Athlete Status</strong></Link>
             <div class="game_status">
-                <h1>Athlete Status - Game 1</h1>
+                <h1>Athlete Status - Game 3</h1>
                 <div class="games">
                     <Link to={'/status/game/1'}>Game 1</Link> | <Link to={'/status/game/2'}>Game 2</Link> | <Link to={'/status/game/3'}><strong>Game 3</strong></Link>
                 </div>

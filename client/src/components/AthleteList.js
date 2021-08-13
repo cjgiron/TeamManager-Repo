@@ -17,7 +17,7 @@ const AthleteList = props => {
 
     return (
         <div>
-            <table className="table table-striped">
+            <table className="table table-striped table-bordered">
                 <thead>
                     <tr>
                         <th>Athlete Name</th>
