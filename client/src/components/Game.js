@@ -1,6 +1,8 @@
 import "../styles/game.css"
+import "./Button"
 
 const Game = props => {
+    const { athletes, gameNum } = props;
 
     return (
         <div>
@@ -12,13 +14,11 @@ const Game = props => {
                     </tr>
                 </thead>
                 <tbody>
-                {props.athletes.map((athlete, idx) => {
+                {athletes.map((athlete, idx) => {
                     return <tr key={idx}>
                         <td>{athlete.name}</td>
                         <td class="buttons">
-                        <button class="btn">Playing</button>
-                        <button class="btn">Not Playing</button>
-                        <button class="btn">Undecided</button>
+                            <Button athlete={athlete} gameNum={gameNum} /> 
                         </td>
                     </tr>
                 })}
