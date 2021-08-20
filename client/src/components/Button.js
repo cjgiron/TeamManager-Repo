@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import "../styles/button.css"
 
 
 const Button = (props) => {
@@ -23,10 +24,10 @@ const Button = (props) => {
         .catch(console.error);
     };
     return (
-    <div>
-        <button className={status === 1 ? 'green' : ''} onClick={ ()=>handleClick(1) }>Playing</button>
-        <button className={status === -1 ? 'red' : ''} onClick={ ()=>handleClick(-1) }>Not Playing</button>
-        <button className={status === 0 ? 'yellow' : ''} onClick={ ()=>handleClick(0) }>Undecided</button>
+    <div class="buttons">
+        <button style={{ width: '250px'}} className={status === 1 ? 'button green' : 'button'} onClick={ ()=>handleClick(1) }>Playing</button>
+        <button style={{ width: '250px'}} className={status === -1 ? 'button red' : 'button'} onClick={ ()=>handleClick(-1) }>Not Playing</button>
+        <button style={{ width: '250px'}} className={status === 0 ? 'button yellow' : 'button'} onClick={ ()=>handleClick(0) }>Undecided</button>
     </div>
     );
 }

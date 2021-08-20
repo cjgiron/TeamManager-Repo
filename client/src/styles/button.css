@@ -1,0 +1,15 @@
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button.green {
+    background-color: green;
+}
+button.red {
+    background-color: red;
+}
+button.yellow {
+    background-color: yellow;
+}
+

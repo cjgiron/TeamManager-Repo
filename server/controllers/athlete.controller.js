@@ -54,3 +54,9 @@ module.exports.deleteAthlete = (request, response) => {
         .then(deleteConfirmation => response.json(deleteConfirmation))
         .catch(err => response.json(err))
 }
+
+module.exports.updateStatus = (req, res) => {
+    Athlete.findByIdAndUpdate(req.params.id, req.body, {new: true})
+    .then(athlete => res.json(athlete))
+    .catch(err => res.status(400).json(err));
+}
